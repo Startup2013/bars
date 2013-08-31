@@ -112,7 +112,8 @@ ROOT_URLCONF = 'view_data.urls'
 WSGI_APPLICATION = 'view_data.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/HAL/market_research_site/view_data/view_data/templates/',
+    os.path.join(PROJECT_PATH, '/templates/'),
+    ('view_data/templates'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
